@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Plushie World</title>
+  <style>
+    /* ------------------------------------------- */
+    /* 🎨 GLOBAL & PAGE STYLING (HTML, BODY, H1)  */
+    /* ------------------------------------------- */
+
+    /* Basic Page background + text font/alignment */
+    body {
+      background-color: #b3e5fc; /* Baby blue background, contrasts with pink theme */
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin: 0;
+      padding: 0;
+    }
+
+    /* Main Heading Style (Pink theme) */
+    h1 {
+      color: #e91e63; /* Pink heading color */
+      margin: 20px 0;
+    }
+
+    /* ------------------------------------------- */
+    /* 🎨 Q6: PRODUCT TABLE STYLING */
+    /* ------------------------------------------- */
+
+    /* Overall Table container style */
+    table {
+      width: 90%;
+      margin: 20px auto;
+      border-collapse: collapse; /* Removes double borders */
+      background: #ffffff;
+      box-shadow: 0px 4px 10px rgba(0,0,0,0.2);
+    }
+
+    /* Cell (Header and Data) common styling */
+    th, td {
+      border: 1px solid #ddd;
+      padding: 14px;
+      text-align: center;
+    }
+
+    /* Table Header (th) specific styling */
+    th {
+      background: #81d4fa; /* Light blue header to separate from rows */
+      color: white;
+      font-size: 18px;
+    }
+
+    /* Zebra Striping (Light pink background for even rows) */
+    tr:nth-child(even) {
+      background-color: #fce4ec; /* very light pink for even rows */
+    }
+
+    /* Styling for the icons/images inside the table cells */
+    td img {
+      width: 100px;   /* Consistent bigger width */
+      height: 100px;  /* Consistent bigger height */
+      object-fit: cover; /* Ensures image fills the space neatly */
+      border-radius: 10px;
+    }
+
+    /* Unordered List (ul) styling for product description */
+    ul {
+      text-align: left; /* Aligns list items to the left within the cell */
+      padding-left: 20px;
+    }
+    
+    /* ------------------------------------------- */
+    /* 🎨 Q7: REGISTRATION FORM STYLING */
+    /* ------------------------------------------- */
+
+    /* Container for the registration form */
+    .registration-container {
+        width: 400px;
+        margin: 40px auto; /* Centers the form horizontally */
+        padding: 20px;
+        background: #fff;
+        border-radius: 10px;
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+        text-align: left; /* Align form elements to the left */
+    }
+
+    .registration-container h2 {
+        text-align: center;
+        color: #e91e63; /* Pink heading */
+        margin-bottom: 20px;
+    }
+
+    /* Styling for form labels */
+    label {
+        display: block; /* Makes the label take up the full width */
+        margin: 10px 0 5px;
+        color: #333;
+        font-weight: bold;
+    }
+
+    /* Styling for all text/email/password inputs */
+    input[type="text"],
+    input[type="email"],
+    input[type="password"] {
+        width: 95%; /* Input width */
+        padding: 10px;
+        margin-bottom: 15px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        box-sizing: border-box; /* Include padding in width calculation */
+    }
+
+    /* Styling for the Submit button (Pink Theme) */
+    input[type="submit"] {
+        background-color: #ff69b4; /* Hot Pink */
+        color: white;
+        padding: 12px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 16px;
+        width: 100%;
+        margin-top: 10px;
+        transition: background-color 0.3s ease;
+    }
+
+    /* Hover effect for the submit button */
+    input[type="submit"]:hover {
+        background-color: #e91e63; /* Darker Pink on hover */
+    }
+
+  </style>
+</head>
+<body>
+  <h1>💖 Welcome to Plushie Shop 💖</h1>
+
+  <table>
+    <tr>
+      <th>Firm Name</th>
+      <th>Firm Icon</th>
+      <th>Product Name</th>
+      <th>Category</th>
+      <th>Description</th>
+    </tr>
+
+    <tr>
+      <td>Plushie World</td>
+      <td><img src="Mini Panda.jpg" alt="Mini Panda"></td>
+      <td>Mini Panda</td>
+      <td>Stuffed Animal</td>
+      <td>
+        <ul>
+          <li>Soft black & white fur</li>
+          <li>Arm Size</li>
+        </ul>
+      </td>
+    </tr>
+
+    <tr>
+      <td>Plushie World</td>
+      <td><img src="Blue Unicorn.jpg" alt="Blue Unicorn"></td>
+      <td>Blue Unicorn</td>
+      <td>Fantasy</td>
+      <td>
+        <ul>
+          <li> Golden Shiny horn</li>
+          <li>Blue fluffy fur With pink hair</li>
+        </ul>
+      </td>
+    </tr>
+
+    <tr>
+      <td>Plushie World</td>
+      <td><img src="Brown Bear.jpg" alt="Brown Bear"></td>
+      <td>Brown Bear</td>
+      <td>Stuffed Animal</td>
+      <td>
+        <ul>
+          <li>Classic teddy bear</li>
+          <li>small cuddly size</li>
+        </ul>
+      </td>
+    </tr>
+
+    <tr>
+      <td>Plushie World</td>
+      <td><img src="Mini mushroom.jpg" alt="Mini mushroom"></td>
+      <td>Mini Mushroom</td>
+      <td>Novelty</td>
+      <td>
+        <ul>
+          <li>Cute red cap</li>
+          <li>Tiny & collectible</li>
+        </ul>
+      </td>
+    </tr>
+
+    <tr>
+      <td>Plushie World</td>
+      <td><img src="Octopus Plushie.jpg" alt="Octopus Plushie"></td>
+      <td>Octopus Plushie</td>
+      <td> Stuffed Animal</td>
+      <td>
+        <ul>
+          <li>8 soft tentacles</li>
+          <li>Smiling face or grumpy</li>
+          <li>Mood Changing</li>
+        </ul>
+      </td>
+    </tr>
+
+    <tr>
+      <td>Plushie World</td>
+      <td><img src="Fennec Fox.jpg" alt="Fennec Fox"></td>
+      <td>Fennec Fox</td>
+      <td>Stuffed Animal</td>
+      <td>
+        <ul>
+          <li>Giant, soft ears</li>
+          <li>Desert-sand colour</li>
+          <li>Life size</li>
+        </ul>
+      </td>
+    </tr>
+
+    <tr>
+      <td>Plushie World</td>
+      <td><img src="Alien Squish.jpg" alt="Alien Squish"></td>
+      <td>Alien Squish</td>
+      <td>Novelty</td>
+      <td>
+        <ul>
+          <li>Squishy marshmallow texture</li>
+          <li>Bright green with three eyes</li>
+        </ul>
+      </td>
+    </tr>
+
+    <tr>
+      <td>Plushie World</td>
+      <td><img src="The Last Dragon.jpg" alt="The Last Dragon"></td>
+      <td>The Last Dragon</td>
+      <td>Fantasy</td>
+      <td>
+        <ul>
+          <li>Tiny wings and soft horns</li>
+          <li>Sparkly scale fabric</li>
+        </ul>
+      </td>
+    </tr>
+
+    <tr>
+      <td>Plushie World</td>
+      <td><img src="Cactus Pal.jpg" alt="Cactus Pal"></td>
+      <td>Cactus Pal</td>
+      <td>Plant</td>
+      <td>
+        <ul>
+          <li>Green felt material (no prickles!)</li>
+          <li>Cute flower detail on top</li>
+        </ul>
+      </td>
+    </tr>
+
+    <tr>
+      <td>Plushie World</td>
+      <td><img src="DonutCat.jpg" alt="Donut Cat"></td>
+      <td>Donut Cat</td>
+      <td>Food/Animal</td>
+      <td>
+        <ul>
+          <li>Shaped like a pink frosted donut</li>
+          <li>Cat ears and whiskers</li>
+        </ul>
+      </td>
+    </tr>
+
+    <tr>
+      <td>Plushie World</td>
+      <td><img src="Ghost Friend.jpg" alt="Ghost Friend"></td>
+      <td>Ghost Friend</td>
+      <td>Novelty</td>
+      <td>
+        <ul>
+          <li>White, floaty design</li>
+          <li>Perfect for spooky season</li>
+        </ul>
+      </td>
+    </tr>
+
+    <tr>
+      <td>Plushie World</td>
+      <td><img src="Rainbow Cloud.jpg" alt="Rainbow Cloud"></td>
+      <td>Rainbow Cloud</td>
+      <td>Weather</td>
+      <td>
+        <ul>
+          <li>Ultra-soft white cloud body</li>
+          <li>Hanging colourful rainbow tassels</li>
+          <li>Small white star hanging above cloud</li>
+        </ul>
+      </td>
+    </tr>
+
+    <tr>
+      <td>Plushie World</td>
+      <td><img src="Green Frog.jpg" alt="Green Frog"></td>
+      <td>Green Frog</td>
+      <td>Stuffed Animal</td>
+      <td>
+        <ul>
+          <li>Green plush with small eyes</li>
+          <li>Waving hand tha ribbit  </li>
+        </ul>
+      </td>
+    </tr>
+
+    <tr>
+      <td>Plushie World</td>
+      <td><img src="Sleepy Star.jpg" alt="Sleepy Star"></td>
+      <td>Sleepy Star</td>
+      <td>Celestial</td>
+      <td>
+        <ul>
+          <li>Bright yellow star shape</li>
+          <li>Sleepy embroidered face</li>
+        </ul>
+      </td>
+    </tr>
+
+    <tr>
+      <td>Plushie World</td>
+      <td><img src="Watermelon Slice.jpg" alt="Watermelon Slice"></td>
+      <td>Watermelon Slice</td>
+      <td>Fruit</td>
+      <td>
+        <ul>
+          <li>Red flesh,green,and black seeds</li>
+          <li>Perfect summer snuggle toy</li>
+        </ul>
+      </td>
+    </tr>
+  </table>
+  <hr>
+
+  <div class="registration-container">
+    <h2>Customer Registration 📝</h2>
+    <form action="#" method="POST">
+      <label for="name">Full Name:</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="email">Email Address:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" required>
+
+      <label for="confirm_password">Confirm Password:</label>
+      <input type="password" id="confirm_password" name="confirm_password" required>
+
+      <label for="phone">Phone Number (Optional):</label>
+      <input type="text" id="phone" name="phone">
+
+      <input type="submit" value="Register Now">
+    </form>
+  </div>
+  </body>
+</html>
